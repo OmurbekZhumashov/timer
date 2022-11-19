@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _countedSeconds = 0; // сколько секунд уже отсчитано, инициализируется нулем
   Duration timedDuration = Duration.zero; // продолжительность таймера до сих пор инициализируется нулем
   bool _timerRunning = false; // состояние того, работает ли таймер или нет
-  final lapTimes = <Duration>[]; // Вы можете понять, как добавить таймер круга?
+  //final lapTimes = <Duration>[]; // Вы можете понять, как добавить таймер круга?
 
   @override
   void initState() {
