@@ -44,10 +44,10 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void startTimer() {
-    _timerRunning = true; // set the timer state to running
-    _timer?.cancel(); // if there's a timer running already, cancel it
-    _countedSeconds = 0; // restart the timer
-    _timer = Timer.periodic(const Duration(seconds: 1), (timer) { // callback
+    _timerRunning = true; // установить состояние таймера на работу
+    _timer?.cancel(); // если таймер уже запущен, отмените его
+    _countedSeconds = 0; // перезапустить таймер
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
         _countedSeconds++; 
         print(_countedSeconds); 
